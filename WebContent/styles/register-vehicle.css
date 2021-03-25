@@ -1,0 +1,170 @@
+.register-vehicle-title{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-vehicle-title p{
+    margin-top: 30px;
+    color: #797979;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.register-vehicle-title h2{
+    text-transform: uppercase;
+    color: #676c72;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .form{
+    width: 800px;
+    background-color: #F2F3F4;
+    margin-bottom: 55px;
+    padding-bottom: 35px;
+    border-radius: 13px;
+}
+
+main .form fieldset{
+    margin-top: 35px;
+    border: none;
+    padding: 0 50px;
+}
+
+main .form fieldset .title legend{
+    margin: 0;
+    border: none;
+}
+
+
+main .form fieldset legend{
+    width: 100%;
+    padding-bottom: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 11px;
+    border-bottom: #797979 dotted 1px;
+    color: #292a2b;;
+}
+
+.fabr-model,
+.placa-chassi,
+.year-color,
+.type-respon{
+    display: flex;
+    width: 100%;
+}
+
+.type-respon{
+    justify-content: center;
+}
+
+.fabr-model .model,
+.fabr-model .fabr,
+.year-color .year,
+.year-color .color,
+.type-respon .type{
+    width: 50%;
+}
+
+.fabr-model .model,
+.year-color .color,
+.type-respon .respons,
+.placa-chassi .chassi{
+    margin-left: 25px;
+}
+
+.placa-chassi .chassi{
+    width: 70%;
+}
+
+
+form .btn-submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+form button{
+    color: #2C3E50;
+    width: 170px;
+    height: 50px;
+    font-size: 15px;
+    outline: none;
+    background-color: #EAECEE;
+    border-radius: 13px;
+    border-color: #ABB2B9;
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover{
+    background-color: #F8F9F9;
+    border-color: #F8F9F9;
+    color: #808B96;
+}
+
+@media screen and (max-width:450px){
+
+    main .form fieldset legend{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:800px){
+
+    body{
+        background-color: #F2F3F4;
+    }
+
+    .register-vehicle-title h2{
+        font-size: 20px;
+    }
+
+    main .form fieldset{
+        margin-top: 20px;
+        border: none;
+        padding: 0 35px;
+    }
+
+    .fabr-model,
+    .placa-chassi,
+    .year-color,
+    .type-respon{
+        display: block;
+    }
+
+    .fabr-model .model,
+    .year-color .color,
+    .type-respon .respons,
+    .placa-chassi .chassi{
+        margin-left: 0;
+    }
+
+    .fabr-model .fabr,
+    .fabr-model .model,
+    .placa-chassi .placa,
+    .placa-chassi .chassi,
+    .year-color .year,
+    .year-color .color,
+    .type-respon .type{
+        width: 100%;
+    }
+
+    form .btn-submit{
+        margin-top: 20px;
+    }
+
+}

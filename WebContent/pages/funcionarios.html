@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+		<meta charset="utf-8">
+		<title>SIGE	- Funcionarios</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="../img/favicon.png">
+		<link rel="stylesheet" href="../styles/home.css">
+		<link rel="stylesheet" href="../styles/funcionarios.css">
+	</head>
+
+	<body>
+	
+		<nav>
+			<div class="logo">
+				<a href="home.html">
+					<img src="../img/logo-home.png" alt="Logo SIGE">
+				</a>
+			</div>
+
+			<ul class="nav-links">
+				<li class="orders-link">
+					<a href="encomendas.html">Encomendas</a>
+				</li> 
+				<li class="employee-link">
+					<a href="">Funcionários</a>
+				</li>
+				<li class="vehicle-link">
+					<a href="veiculos.html">Veículos</a>
+				</li>
+				<li class="acess-link">
+					<a href="#">
+						<img src="../img/exit.png" alt="Sair">
+					</a>
+				</li>
+			</ul>
+
+			<div class="burger">
+				<div class="linha1"></div>
+				<div class="linha2"></div>
+				<div class="linha3"></div>
+			</div>
+
+		</nav>
+
+		<section>
+			<div class="funcionarios-title">
+				<p>Seja bem-vindo(a) User!</p>
+				<h2>Funcionarios</h2>
+				<div class="search-create">
+					<div class="search-box">
+						<input class="input" type="text" placeholder="Procurar um funcionariose...">
+						<button class="submit" type="submit">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+					<div class="create-box">
+						<a href="#">
+							<i class="fas fa-plus"></i>
+							Cadastrar funcionariose
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-funcionarios">
+
+				<!-- se não há funcionarioses -->
+				<!-- <div class="no-orders">
+					<h3>Não há nenhum funcionariose cadastrado...</h3>
+					<h4>:(</h4>
+				</div> -->
+
+				<!-- se há funcionarioses -->
+
+				<div class="card-funcionarios">
+					<div class="img-person-funcionario">
+						<img src="../img/funcionario.svg" alt="">
+						<div class="person">
+							<p><b>Nome:</b> Ismael Fernandes Silveira Bento</p>
+							<p><b>CPF:</b> 152.364.987-25</p>
+							<p><b>Código:</b> 156154114</p>
+						</div>
+					</div>
+					<div class="contacts-info">
+						<div class="contacts">
+							<p><b>Telefone:</b> (38) 99256-5896</p>
+							<p><b>E-mail:</b> ismael@email.com</p>
+						</div>
+						<div class="info1">
+							<p><b>CLT:</b> 55555555555-X</p>
+							<p><b>Data de Registro:</b> 25/02/1852</p>
+						</div>
+						<div class="info2">
+							<p><b>Salário:</b> R$ 1200,00</p>
+							<p><b>Setor:</b> Trasporte / <b></b>Cargo:</b> Motorista</p>
+						</div>
+					</div>
+					
+					<div class="address">
+						<div class="address-bairro">
+							<p><b>Endereço:</b> Rua São Vicente de Paula, Nº 256</p>
+							<p><b>Bairro:</b> Montes Claros</p>
+						</div>
+						<div class="city-state">
+							<p><b>Cidade:</b> Nova Lima</p>
+							<p><b>Estado:</b> Minas Gerais</p>
+						</div>
+					</div>
+					<div class="crud-funcionario">
+						<a class="update" href="">
+							<i class="fas fa-redo"></i>
+							Atualizar
+						</a>
+						<a class="delete" href="">
+							<i class="fas fa-trash"></i>
+							Excluir
+						</a>
+					</div>
+				</div>
+				
+			</div>
+
+		</section>
+
+	</body>
+	<script src="../scripts/responsive.js"></script>
+	<script src="https://kit.fontawesome.com/e386f7fbce.js" crossorigin="anonymous"></script>
+	
+</html>

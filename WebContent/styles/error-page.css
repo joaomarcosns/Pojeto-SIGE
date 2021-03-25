@@ -1,0 +1,29 @@
+
+.img-area{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 375px;
+    background-color: none;
+    border-radius: 15px;
+}
+
+.img-area img{
+    width: 400px;
+    margin-top: 40px;
+}
+
+.img-area p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 700px){
+
+    .img-area img{
+        width: 250px;
+    }
+}

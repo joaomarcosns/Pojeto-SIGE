@@ -1,0 +1,334 @@
+section{
+    margin-bottom: 55px;
+}
+
+.vehicle-link a{
+    text-shadow: 0 0 5px #000;
+}
+
+.veiculos-title{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.veiculos-title p{
+    margin-top: 30px;
+    color: #797979;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.veiculos-title h2{
+    text-transform: uppercase;
+    color: #676c72;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.search-create{
+    display: flex;
+    width: 900px;
+    height: 30px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.create-box{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.create-box a{
+    color: #0011ff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: .2s;
+} 
+
+.create-box a:hover{
+    text-shadow: 0 0 1px #3c49ff;
+}
+
+.search-box .input{
+    width: 250px;
+    height: 30px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 13px;
+    border-width: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #ABB2B9;
+    outline: none;
+    color: #676c72;
+}
+
+.search-box .submit{
+    color: #2C3E50;
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+    outline: none;
+    background-color: #EAECEE;
+    border-radius: 13px;
+    border-color: #ABB2B9;
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box .submit:hover{
+    background-color: #F8F9F9;
+    border-color: #F8F9F9;
+    color: #808B96;
+}
+
+.search-box .input::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 15px;
+    color: #c0c0c0;
+}
+
+.section-veiculos{
+    display: grid;
+    justify-content: center;
+}
+
+.section-veiculos .no-veiculos{
+    text-align: center;
+}
+
+.section-veiculos .no-veiculos h3{
+    color: #797979;
+    text-transform: uppercase;
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.section-veiculos .no-veiculos h4{
+    color: #797979;
+    font-size: 70px;
+    margin: 45px;
+    opacity: .4;
+}
+
+.card-veiculo{
+    text-align: left;
+    background-color: #F2F3F4;
+    width: 900px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card-veiculo p{
+    font-size: 15px;
+    color: #292a2b;
+}
+
+.card-veiculo .veiculo-specs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: #797979 dotted 1px;
+}
+
+.card-veiculo .veiculo-specs img{
+    width: 60px;
+}
+
+.veiculo-specs .specs{
+    display: flex;
+    margin-left: 15px;
+}
+
+.veiculo-specs .specs .specs2{
+    margin-left: 50px;
+}
+
+.veiculo-specs .specs p{
+    font-size: 17px;
+}
+
+.card-veiculo .descript{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-veiculo .descript{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #797979 dotted 1px;
+}
+
+.descript .descript-specs1,
+.descript .descript-specs2,
+.descript .descript-specs3{
+    width: 30%;
+}
+
+.card-veiculo .crud-veiculo{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+}
+
+.card-veiculo .crud-veiculo a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.card-veiculo .crud-veiculo .update{
+    margin-right: 55px;
+    color: #0011ff;
+    transition: .2s;
+}
+
+.card-veiculo .crud-veiculo .update:hover{
+    text-shadow: 0 0 1px #3c49ff;
+}
+
+.card-veiculo .crud-veiculo .delete{
+    color: #ff0000;
+    transition: .2s;
+}
+
+.card-veiculo .crud-veiculo .delete:hover{
+    text-shadow: 0 0 1px #ff2323;
+}
+
+@media screen and (max-width:500px){
+
+    .card-veiculo .veiculo-specs,
+    .card-veiculo .descript,
+    .card-veiculo .crud-veiculo{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .card-veiculo .veiculo-specs img{
+        width: 80px;
+    }
+
+    .veiculo-specs .specs p{
+        font-size: 15px;
+    }
+
+    .veiculo-specs .specs{
+        display: block;
+    }
+
+    .veiculo-specs .specs .specs2{
+        margin-left: 0px;
+    }
+
+    .search-box .input{
+        width: 60vw;
+        font-size: 13px;
+    }
+
+    .search-box .input::-webkit-input-placeholder {
+        font-size: 13px;
+    }
+
+    .veiculo-title h2{
+        margin-top: 15px;
+    }
+
+    .card-veiculo{
+        width: 85vw;
+    }
+
+    .card-veiculo p{
+        font-size: 12px;
+    }
+
+    .card-veiculo .crud-veiculo{
+        padding-top: 5px;
+    }
+
+    .card-veiculo .crud-veiculo a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:640px){
+
+    .veiculos-title h2{
+        font-size: 25px;
+    }
+
+    .search-create{
+        display: grid;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .search-box{
+        align-items: center;
+        width: 81vw;
+    }
+
+    .create-box{
+        display: flex;
+        height: 25px;
+        width: 80vw;
+        justify-content: center;
+    }
+
+    .create-box a{
+        font-size: 15px;
+    }
+
+    .card-veiculo p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .card-veiculo .descript{
+        display: block;
+    }
+
+    .card-veiculo .veiculo-specs{
+        justify-content:start;
+    }
+
+    .veiculo-specs .specs{
+        margin-left: 10px;
+    }
+
+    .descript .descript-specs1,
+    .descript .descript-specs2,
+    .descript .descript-specs3{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+
+    .search-create{
+        width: 85vw;
+    }
+
+    .card-veiculo{
+        width: 85vw;
+    }
+}

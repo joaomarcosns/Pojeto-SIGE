@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+		<meta charset="utf-8">
+		<title>SIGE	- Encomendas</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="../img/favicon.png">
+		<link rel="stylesheet" href="../styles/home.css">
+		<link rel="stylesheet" href="../styles/orders.css">
+	</head>
+
+	<body>
+	
+		<nav>
+			<div class="logo">
+				<a href="home.html">
+					<img src="../img/logo-home.png" alt="Logo SIGE">
+				</a>
+			</div>
+
+			<ul class="nav-links">
+				<li class="orders-link">
+					<a href="encomendas.html">Encomendas</a>
+				</li> 
+				<li class="clients-link">
+					<a href="clientes.html">Clientes</a>
+				</li>
+				<li class="employee-link">
+					<a href="funcionarios.html">Funcionários</a>
+				</li>
+				<li class="vehicle-link">
+					<a href="veiculos.html">Veículos</a>
+				</li>
+				<li class="acess-link">
+					<a href="#">
+						<img src="../img/exit.png" alt="Sair">
+					</a>
+				</li>
+			</ul>
+
+			<div class="burger">
+				<div class="linha1"></div>
+				<div class="linha2"></div>
+				<div class="linha3"></div>
+			</div>
+		</nav>
+
+		<section>
+			<div class="orders-title">
+				<p>Seja bem-vindo(a) User!</p>
+				<h2>Encomendas</h2>
+				<div class="search-create">
+					<div class="search-box">
+						<input class="input" type="text" maxlength="50" placeholder="Procurar uma encomenda...">
+						<button class="submit" type="submit">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+					<div class="create-box">
+						<a href="cadastrar-encomenda.html">
+							<i class="fas fa-plus"></i>
+							Cadastrar Encomenda
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section-orders">
+
+				<!-- <div class="no-orders">
+					<h3>Não há nenhuma encomenda...</h3>
+					<h4>:(</h4>
+				</div>  -->
+
+
+				<div class="card-order">
+					<div class="code">
+						<p><b>Codigo:</b> 151548632</p>
+						<p><b>Status:</b> Pendente</p>
+					</div>
+					<div class="remet">
+						<p><b>Remetente:</b> João da Silva Honorato Silveria Melo</p>
+						<p><b>Endereço:</b> Rua dos Cocais, Nº 152 - Bairro Vila Nova - Urandi-BA</p>
+						<p><b>Contato:</b> (77) 9922222222</p>
+					</div>
+					<div class="dest">
+						<p><b>Destinatário:</b> Vinicius Guilherme de Nogueira</p>
+						<p><b>Endereço:</b> Rua da Melada, N° 356 - Bairro Santa Rita - Monte Azul-MG</p>
+						<p><b>Contato:</b> (55) 665892145</p>
+					</div>
+					<div class="specs">
+						<div class="descrip">
+							<p><b>Tipo:</b> Comum</p>
+							<p><b>Altura:</b> 15 cm</p>
+							<p><b>Largura:</b> 25 cm</p>
+							<p><b>Comprimento:</b> 45 cm</p>
+						</div>
+						<div class="data">
+							<p><b>Peso:</b> 3,5 kg</p>
+							<p><b>Valor:</b> R$45,00</p>
+							<p><b>Postagem:</b> 20/05/2020</p>
+							<p><b>Prev. Entrega:</b> 15/06/2020</p>
+						</div>
+						<div class="respon">
+							<p><b>Responsável:</b> Rodolpho</p>
+							<p><b>ID Responsável:</b> 5552364</p>
+							<p><b>Veículo:</b> Sprinter</p>
+							<p><b>ID Veículo:</b> 2156149</p>
+						</div>
+					</div>
+					<div class="crud-order">
+						<a class="update" href="">
+							<i class="fas fa-redo"></i>
+							Atualizar
+						</a>
+						<a class="delete" href="">
+							<i class="fas fa-trash"></i>
+							Excluir
+						</a>
+						<a class="checked" href="">
+							<i class="fas fa-clipboard-check"></i>
+							Entregar
+						</a>
+						
+					</div>
+				</div>
+
+				<div class="card-order">
+					<div class="code">
+						<p><b>Codigo:</b> 151548632</p>
+						<p><b>Status:</b> Pendente</p>
+					</div>
+					<div class="remet">
+						<p><b>Remetente:</b> João da Silva Honorato Silveria Melo</p>
+						<p><b>Endereço:</b> Rua dos Cocais, Nº 152 - Bairro Vila Nova - Urandi-BA</p>
+						<p><b>Contato:</b> (77) 9922222222</p>
+					</div>
+					<div class="dest">
+						<p><b>Destinatário:</b> Vinicius Guilherme de Nogueira</p>
+						<p><b>Endereço:</b> Rua da Melada, N° 356 - Bairro Santa Rita - Monte Azul-MG</p>
+						<p><b>Contato:</b> (55) 665892145</p>
+					</div>
+					<div class="specs">
+						<div class="descrip">
+							<p><b>Tipo:</b> Comum</p>
+							<p><b>Altura:</b> 15 cm</p>
+							<p><b>Largura:</b> 25 cm</p>
+							<p><b>Comprimento:</b> 45 cm</p>
+						</div>
+						<div class="data">
+							<p><b>Peso:</b> 3,5 kg</p>
+							<p><b>Valor:</b> R$45,00</p>
+							<p><b>Postagem:</b> 20/05/2020</p>
+							<p><b>Prev. Entrega:</b> 15/06/2020</p>
+						</div>
+						<div class="respon">
+							<p><b>Responsável:</b> Rodolpho</p>
+							<p><b>ID Responsável:</b> 5552364</p>
+							<p><b>Veículo:</b> Sprinter</p>
+							<p><b>ID Veículo:</b> 2156149</p>
+						</div>
+					</div>
+					<div class="crud-order">
+						<a class="update" href="">
+							<i class="fas fa-redo"></i>
+							Atualizar
+						</a>
+						<a class="delete" href="">
+							<i class="fas fa-trash"></i>
+							Excluir
+						</a>
+					</div>
+				</div>
+				
+				<div class="card-order">
+					<div class="code">
+						<p><b>Codigo:</b> 151548632</p>
+						<p><b>Status:</b> Pendente</p>
+					</div>
+					<div class="remet">
+						<p><b>Remetente:</b> João da Silva Honorato Silveria Melo</p>
+						<p><b>Endereço:</b> Rua dos Cocais, Nº 152 - Bairro Vila Nova - Urandi-BA</p>
+						<p><b>Contato:</b> (77) 9922222222</p>
+					</div>
+					<div class="dest">
+						<p><b>Destinatário:</b> Vinicius Guilherme de Nogueira</p>
+						<p><b>Endereço:</b> Rua da Melada, N° 356 - Bairro Santa Rita - Monte Azul-MG</p>
+						<p><b>Contato:</b> (55) 665892145</p>
+					</div>
+					<div class="specs">
+						<div class="descrip">
+							<p><b>Tipo:</b> Comum</p>
+							<p><b>Altura:</b> 15 cm</p>
+							<p><b>Largura:</b> 25 cm</p>
+							<p><b>Comprimento:</b> 45 cm</p>
+						</div>
+						<div class="data">
+							<p><b>Peso:</b> 3,5 kg</p>
+							<p><b>Valor:</b> R$45,00</p>
+							<p><b>Postagem:</b> 20/05/2020</p>
+							<p><b>Prev. Entrega:</b> 15/06/2020</p>
+						</div>
+						<div class="respon">
+							<p><b>Responsável:</b> Rodolpho</p>
+							<p><b>ID Responsável:</b> 5552364</p>
+							<p><b>Veículo:</b> Sprinter</p>
+							<p><b>ID Veículo:</b> 2156149</p>
+						</div>
+					</div>
+					<div class="crud-order">
+						<a class="update" href="">
+							<i class="fas fa-redo"></i>
+							Atualizar
+						</a>
+						<a class="delete" href="">
+							<i class="fas fa-trash"></i>
+							Excluir
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+	</body>
+	<script src="../scripts/responsive.js"></script>
+	<script src="https://kit.fontawesome.com/e386f7fbce.js" crossorigin="anonymous"></script>
+	
+</html>

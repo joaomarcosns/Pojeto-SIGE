@@ -1,0 +1,55 @@
+<style>
+    
+    .button{  
+        float:left;
+        width:200px;
+        padding:20px 30px;
+        margin:30px;
+        text-align:center;
+        font-weight:bold;
+        cursor:pointer;
+        transition:background .5s;
+    }
+    
+    #success{
+        background:#03a679;
+        color:#f0f0f0;  
+    }
+    
+    #failure{
+        background:#ff3939;
+        color:#f0f0f0;  
+    }
+    
+    .notify{  
+        position:absolute;
+        top:0px;
+        width:100%;
+        height:0;  
+        box-sizing:border-box;
+        color:white;  
+        text-align:center;
+        background:rgba(0,0,0,.6);
+        overflow:hidden;
+        box-sizing:border-box;
+        transition:height .2s;
+    }
+    
+    #notifyType{
+        display:block;
+        margin-top:15px; 
+    }
+    
+    .active{  
+        height:50px;
+    }
+    
+    .success{
+        Content:"Cadastro realizado com Sucesso!";
+    }
+    
+    .failure{
+        Content:"Oh no! Something didn't go as planned :(";
+    }
+</style>
+<div class="notify"><span id="sucess" class="sucess"></span></div>

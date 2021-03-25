@@ -1,0 +1,206 @@
+.register-orders-title{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-orders-title p{
+    margin-top: 30px;
+    color: #797979;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.register-orders-title h2{
+    text-transform: uppercase;
+    color: #676c72;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .form{
+    width: 800px;
+    background-color: #F2F3F4;
+    margin-bottom: 55px;
+    padding-bottom: 35px;
+    border-radius: 13px;
+}
+
+main .form fieldset{
+    margin-top: 35px;
+    border: none;
+    padding: 0 50px;
+}
+
+main .form fieldset .title legend{
+    margin: 0;
+    border: none;
+}
+
+main .form fieldset .title{
+    display: flex;
+    margin-bottom: 11px;
+    border-bottom: #797979 dotted 1px;
+}
+
+main .form fieldset legend{
+    width: 100%;
+    padding-bottom: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 11px;
+    border-bottom: #797979 dotted 1px;
+    color: #292a2b;;
+}
+
+.contact,
+.city-state-cep,
+.line1,
+.bairro-num,
+.line2,
+.line3,
+.cpf-clt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.importants{
+    display: flex;
+    justify-content: center;
+}
+
+.bairro-num .number{
+    width: 30%;
+}
+
+.bairro-num .bairro{
+    width: 70%;
+}
+
+.contact .input-block,
+.city-state-cep .input-block,
+.line3 .responsable{
+    width: 55%;
+}
+
+.contact .wpp,
+.bairro-num .bairro,
+.city-state-cep .state,
+.city-state-cep .city,
+.line1 .post,
+.line1 .time,
+.line1 .value,
+.line2 .altura,
+.line2 .largura,
+.line2 .peso,
+.line3 .responsable,
+.setor, .cargo{
+    margin-left: 20px;
+}
+
+form .btn-submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+form button{
+    color: #2C3E50;
+    width: 170px;
+    height: 50px;
+    font-size: 15px;
+    outline: none;
+    background-color: #EAECEE;
+    border-radius: 13px;
+    border-color: #ABB2B9;
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover{
+    background-color: #F8F9F9;
+    border-color: #F8F9F9;
+    color: #808B96;
+}
+
+@media screen and (max-width:450px){
+    main .form fieldset .title{
+        display: grid;
+    }
+    main .form fieldset .title .sugestion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main .form fieldset .title .sugestion #select-sugestion{
+        width: 100%;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    body{
+        background-color: #F2F3F4;
+    }
+
+    .register-orders-title h2{
+        font-size: 20px;
+    }
+
+    main .form fieldset legend{
+        font-size: 18px;
+    }
+    
+    main .form fieldset{
+        margin-top: 20px;
+        border: none;
+        padding: 0 35px;
+    }
+
+    .contact,
+    .bairro-num,
+    .city-state-cep,
+    .line1, .bairro-num,
+    .line2, .importants,
+    .line3, .cpf-clt{
+        display: block;
+    }
+
+    .contact .wpp,
+    .bairro-num .bairro,
+    .city-state-cep .state,
+    .city-state-cep .city,
+    .line1 .post, .setor,
+    .line1 .time,
+    .line1 .value,
+    .line2 .altura,
+    .line2 .largura,
+    .line2 .peso, .cargo,
+    .line3 .responsable{
+        margin-left: 0;
+    }
+
+    .contact .input-block,
+    .bairro-num .bairro,
+    .city-state-cep .input-block,
+    .line3 .responsable,
+    .cpf, .bairro-num .number{
+        width: 100%;
+    }
+
+    form .btn-submit{
+        margin-top: 20px;
+    }
+
+}

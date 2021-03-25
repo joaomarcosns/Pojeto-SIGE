@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+		<meta charset="utf-8">
+		<title>SIGE	- Cadastrar funcionario</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="../img/favicon.png">
+		<link rel="stylesheet" href="../styles/home.css">
+		<link rel="stylesheet" href="../styles/register-func.css">
+		<link rel="stylesheet" href="../styles/forms.css">
+	</head>
+
+	<script>
+
+	</script>
+
+	<body>
+	
+		<nav>
+			<div class="logo">
+				<a href="home.html">
+					<img src="../img/logo-home.png" alt="Logo SIGE">
+				</a>
+			</div>
+
+			<ul class="nav-links">
+				<li class="orders-link">
+					<a href="encomendas.html">Encomendas</a>
+				</li> 
+				<li class="clients-link">
+					<a href="clientes.html">Clientes</a>
+				</li>
+				<li class="employee-link">
+					<a href="">Funcionários</a>
+				</li>
+				<li class="vehicle-link">
+					<a href="">Veículos</a>
+				</li>
+				<li class="acess-link">
+					<a href="#">
+						<img src="../img/exit.png" alt="Sair">
+					</a>
+				</li>
+			</ul>
+
+			<div class="burger">
+				<div class="linha1"></div>
+				<div class="linha2"></div>
+				<div class="linha3"></div>
+			</div>
+		</nav>
+
+		<div class="register-orders-title">
+			<p>Seja bem-vindo(a) User!</p>
+			<h2>Cadastrar funcionario</h2>
+		</div>
+
+		<main>
+
+			<form class="form" action="cadastrar-encomenda.html" id="register-order" method="POST">
+
+				<fieldset>
+
+					<div class="title">
+						<legend>Dados do funcionario</legend>
+					</div>
+
+					<div class="input-block">
+						<label for="name-func">Nome completo *</label>
+						<input name="name-func" oninput="validaInput(this)" id="name-func" placeholder="Ex.: Ana Maria Silva" required>
+					</div>
+
+					<div class="cpf-clt">
+						<div class="input-block cpf">
+							<label for="cpf-rem">CPF<small> (somente números)</small> *</label>
+							<input oninput="mascara(this, 'cpf')" type="text" name="cpf-func" id="cpf-rem" placeholder="Ex.: 123.456.789-10" required>
+						</div>
+						<div class="input-block clt">
+							<label for="cpf-rem">Carteira de trabalho</label>
+							<input type="text" name="cpf-rem" id="cpf-rem" placeholder="Ex.: 123.456.789-10" required>
+						</div>
+					</div>
+					
+
+					<div class="contact">
+						<div class="input-block email">
+							<label for="email-rem">E-mail</label>
+							<input name="email-rem" oninput="validaInput(this)" id="email-rem" type="text" placeholder="email@email.com">
+						</div>
+	
+						<div class="input-block wpp">
+							<label for="whatsapp-rem">Contato
+								<i class="fab fa-whatsapp"></i>
+								<small> (somente números)</small> *
+							</label>
+							<input oninput="mascara(this, 'tel')" type="text" name="whatsapp-rem" id="whatsapp-rem" required>
+						</div>
+					</div>
+
+					<div class="input-block">
+						<label for="rua-rem">Endereço *</label>
+						<input name="rua-rem" oninput="validaInput(this)" id="rua-rem" type="text" required>
+					</div>
+
+					<div class="bairro-num">
+						<div class="input-block number">
+							<label for="number-rem">Número *</label>
+							<input name="number-rem" id="number-rem" min="1" max="999999" type="number" required>
+						</div>
+	
+						<div class="input-block bairro">
+							<label for="bairro-rem">Bairro *</label>
+							<input name="bairro-rem" oninput="validaInput(this)" id="bairro-rem" type="text" required>
+						</div>
+					</div>
+
+					<div class="city-state-cep">
+						<div class="input-block cep">
+							<label for="cep-rem">CEP *</label>
+							<input name="cep-rem" oninput="mascara(this, 'cep')" id="city-rem" type="text" required>
+						</div>
+						<div class="input-block city">
+							<label for="city-rem">Cidade *</label>
+							<input name="city-rem" oninput="validaInput(this)" id="city-rem" type="text" required>
+						</div>
+						<div class="input-block state">
+							<label for="state-func">Estado *</label>
+							<select name="state-func" id="state-func" required>
+								<option value="" selected disabled>Selecione</option>
+								<option value="AC">Acre</option>
+								<option value="AL">Alagoas</option>
+								<option value="AP">Amapá</option>
+								<option value="AM">Amazonas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="DF">Distrito Federal</option>
+								<option value="ES">Espirito Santo</option>
+								<option value="GO">Goiás</option>
+								<option value="MA">Maranhão</option>
+								<option value="MT">Mato Grosso</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="PA">Pará</option>
+								<option value="PB">Paraíba</option>
+								<option value="PR">Paraná</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="RN">Rio Grande do Norte</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="SP">São Paulo</option>
+								<option value="SE">Sergipe</option>
+								<option value="TO">Tocantins</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="importants">
+						<div class="input-block salario">
+							<label for="bairro-rem">Salário *</label>
+							<input name="bairro-rem" id="bairro-rem" min="0.01" max="999999" step="0.01" type="number" required>
+						</div>
+						<div class="input-block cargo">
+							<label for="cargo-rem">Cargo *</label>
+							<select name="cargo-func" id="cargo-func" required>
+								<option value="" selected disabled>Selecione</option>
+								<option value="Motorista">Motorista</option>
+								<option value="Entregador">Entregador</option>
+								<option value="Recepcionista">Recepcionista</option>
+							</select>
+						</div>
+					</div>
+
+					
+				</fieldset>
+
+				<div class="btn-submit">
+					<button type="submit" form="register-order">
+						<i class="fas fa-save"></i> Salvar cadastro
+					</button>
+				</div>
+
+			</form>
+
+		</main>
+	</body>
+	<script src="../scripts/trasForm.js"></script>
+	<script src="../scripts/responsive.js"></script>
+	<script src="../scripts/mascara.js"></script>
+	<script src="https://kit.fontawesome.com/e386f7fbce.js" crossorigin="anonymous"></script>
+	
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root{
+    font-size: 60%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background: linear-gradient(35deg, rgba(242,243,244,1) 0%, rgba(171,178,175,1) 59%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body #container {
+    width: 90vw; /* width = largura */
+    max-width: 700px;
+}
+
+.area-login{
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 375px;
+    background-color: #F2F3F4;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.area-login .input-box{
+    padding: 15px;
+    position: relative;
+    padding-top: 55px;
+}
+
+.area-login .input-box .user-img{
+    width: 60px;
+}
+
+.area-login .input-box .logo-img{
+    width: 110px;
+    display: none;
+}
+
+.area-login .input-box p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.area-login .input-box input{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 13px;
+    border-width: 1px;
+    border-color: #ABB2B9;
+    outline: none;
+    color: #676c72;
+}
+
+.area-login .input-box input::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #D5D8DC;
+}
+
+.area-login .btn-login{
+    padding: 20px 10px 15px;
+}
+
+.area-login .btn-login input{
+    color: #2C3E50;
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    outline: none;
+    background-color: #EAECEE;
+    border-radius: 13px;
+    border-color: #ABB2B9;
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.area-login .btn-login input:hover{
+    background-color: #F8F9F9;
+    border-color: #F8F9F9;
+    color: #808B96;
+}
+
+.input-box .error p{
+    font-weight: bold;
+    color: red;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.input-box a{
+    color: #0011ff;
+    font-size: 13px;
+    transition: .2s;
+}
+
+.input-box a:hover{
+    text-shadow: 0 0 1px #3c49ff;
+}
+
+.img-logo{
+    /*display: flex;*/
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 470px;
+    height: 375px;
+    background-color: #F2F3F4;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.img-logo img{
+    margin-top: 70px;
+    height: 200px;
+}
+
+.img-logo p{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 17px;
+
+}
+
+footer{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #0011ff;
+}
+
+footer p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 11px;
+}
+
+@media (max-width: 700px){
+
+    .img-logo{
+        display: none;
+    }
+
+    .area-login{
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .area-login .input-box p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 3px;
+    }
+
+    .area-login .input-box input{
+        width: 230px;
+    }
+
+    .area-login .input-box .user-img{
+        display: none;
+    }
+    
+    .area-login .input-box .logo-img{
+        display: initial;
+    }
+
+    body{
+        justify-content: center;
+        background: rgb(242,243,244);
+    }
+}

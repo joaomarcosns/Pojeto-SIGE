@@ -14,4 +14,6 @@ Para poder poder usar o SIGE, primeiramente vc precisa
   <img align="center" src="https://github.com/JOaOMARcosNs/Pojeto-SEGE/blob/main/Captura%20de%20tela%202021-03-25%20105357.png?raw=true" width="500" height="300" />
   <img align="center" src="https://github.com/JOaOMARcosNs/Pojeto-SEGE/blob/main/Captura%20de%20tela%202021-03-25%20105413.png?raw=true" width="500" height="300"/>
 </p>
-<img align="70%" src="https://github.com/JOaOMARcosNs/Pojeto-SEGE/blob/main/Captura%20de%20tela%202021-03-25%20105413.png?raw=true" width="500" height="300"/>
+<p align="center">
+  <img src="https://github.com/JOaOMARcosNs/Pojeto-SEGE/blob/main/Captura%20de%20tela%202021-03-25%20105413.png?raw=true" width="500" height="300"/>
+</p>

@@ -17,7 +17,7 @@ Para poder poder usar o SIGE, primeiramente vc precisa
 <p align="center">
   <img src="https://github.com/JOaOMARcosNs/Pojeto-SEGE/blob/main/Captura%20de%20tela%202021-03-25%20105413.png?raw=true" width="500" height="300"/>
 </p>
-##  Diagramas 
 
+## Diagramas 
 <img src="https://github.com/JOaOMARcosNs/Pojeto-SEGE/blob/main/src/diagrama/diagrama.jpg?raw=true" width="700" height="700"/>
 <img src="https://github.com/JOaOMARcosNs/Pojeto-SEGE/blob/main/src/diagrama/Diagram.jpg?raw=true" width="1000" height="1000"/>
